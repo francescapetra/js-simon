@@ -31,7 +31,7 @@ function trovaInArray(array, elemento) {
 }
 
 // parte un timer di 30 secondi
-var secondi = 30;//metti 30
+var secondi = 3;//metti 30
 var numeriUtente;
 var arrayUtente = [];
 
@@ -49,7 +49,9 @@ var countDown = setInterval(function () {
 
         if (isNaN(numeriUtente)) {
           alert("inserisci un nuovo numero");
+          i-= 1;
         }else if (arrayUtente.includes(numeriUtente)) {
+          i-= 1;
           alert("inserisci un nuovo numero");
         }
         else {
