@@ -44,9 +44,18 @@ var countDown = setInterval(function () {
     var arrayUtente = [];
     var numeriIndovinati = [];
 // dopo 30 secondi abbimao 5 prompt dei nuemri visti
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; arrayUtente.length< 5; i++) {
       numeriUtente = parseInt(prompt("inserisci i tuoi numeri"));
-      arrayUtente.push(numeriUtente);
+
+        if (isNaN(numeriUtente)) {
+          alert("inserisci un nuovo numero");
+        }else if (arrayUtente.includes(numeriUtente)) {
+          alert("inserisci un nuovo numero");
+        }
+        else {
+          arrayUtente.push(numeriUtente);
+        }
+
       var trovato = trovaInArray(arrayEstratti, numeriUtente)
 
       if (trovato == true) {
