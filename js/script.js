@@ -31,7 +31,7 @@ function trovaInArray(array, elemento) {
 }
 
 // parte un timer di 30 secondi
-var secondi = 5;//metti 30
+var secondi = 30;//metti 30
 var numeriUtente;
 var arrayUtente = [];
 
