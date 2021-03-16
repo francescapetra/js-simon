@@ -15,7 +15,7 @@ function randomGeneratore(min, max){
   }
   return numeriEstratti;
 }
-alert("Numeri DA INDOVINARE: " + arrayEstratti);
+alert("Numeri DA MEMORIZZARE: " + arrayEstratti);
 
 
 function trovaInArray(array, elemento) {
@@ -54,11 +54,11 @@ var countDown = setInterval(function () {
       }
     }
     console.log(arrayUtente);
-    console.log(numeriIndovinati+ "ciao");
+    // il software dice quali e quanti numeri sono stati indovinati
+    console.log(" Totale numeri indovinati--> " + numeriIndovinati.length + " Numeri corrispondenti--> " + numeriIndovinati );
 
   }else {
     secondi-= 1;
   }
 },1000
 );
-// il software dice quali e quanti numeri sono stati indovinati
