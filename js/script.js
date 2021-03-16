@@ -31,7 +31,7 @@ function trovaInArray(array, elemento) {
 }
 
 // parte un timer di 30 secondi
-var secondi = 3;//metti 30
+var secondi = 30;//metti 30
 var numeriUtente;
 var arrayUtente = [];
 
@@ -64,9 +64,9 @@ var countDown = setInterval(function () {
           numeriIndovinati.push(numeriUtente);
       }
     }
-    console.log(arrayUtente);
+    console.log("Numeri inseriti " + arrayUtente);
     // il software dice quali e quanti numeri sono stati indovinati
-    console.log(" Totale numeri indovinati--> " + numeriIndovinati.length + " Numeri corrispondenti--> " + numeriIndovinati);
+    console.log("Totale numeri indovinati--> " + numeriIndovinati.length + " Numeri corrispondenti--> " + numeriIndovinati);
 
   }else {
     secondi-= 1;
