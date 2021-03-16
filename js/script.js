@@ -17,6 +17,19 @@ function randomGeneratore(min, max){
 }
 alert("Numeri DA INDOVINARE: " + arrayEstratti);
 
+
+function trovaInArray(array, elemento) {
+  var i = 0;
+  trovato = false;
+  while (i < array.length) {
+    if (array[i] == elemento) {
+      return true;
+    }
+    i++;
+  }
+  return false;
+}
+
 // parte un timer di 30 secondi
 var secondi = 5;//metti 30
 var numeriUtente;
@@ -29,19 +42,23 @@ var countDown = setInterval(function () {
 
     var numeriUtente;
     var arrayUtente = [];
-
+    var numeriIndovinati = [];
+// dopo 30 secondi abbimao 5 prompt dei nuemri visti
     for (var i = 0; i < 5; i++) {
       numeriUtente = parseInt(prompt("inserisci i tuoi numeri"));
       arrayUtente.push(numeriUtente);
-      console.log(arrayUtente);}
+      var trovato = trovaInArray(arrayEstratti, numeriUtente)
+
+      if (trovato == true) {
+          numeriIndovinati.push(numeriUtente);
+      }
+    }
+    console.log(arrayUtente);
+    console.log(numeriIndovinati+ "ciao");
+
   }else {
     secondi-= 1;
   }
 },1000
 );
-
-
-
-// dopo 30 secondi abbimao 5 prompt dei nuemri visti
-
 // il software dice quali e quanti numeri sono stati indovinati
