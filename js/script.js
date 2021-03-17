@@ -31,7 +31,7 @@ function trovaInArray(array, elemento) {
 }
 
 // parte un timer di 30 secondi
-var secondi = 30;//metti 30
+var secondi = 30 ;//metti 30
 var numeriUtente;
 var arrayUtente = [];
 
@@ -43,7 +43,7 @@ var countDown = setInterval(function () {
     var numeriUtente;
     var arrayUtente = [];
     var numeriIndovinati = [];
-// dopo 30 secondi abbimao 5 prompt dei nuemri visti
+// dopo 30 secondi abbiamo 5 prompt dei nuemeri visti
     for (var i = 0; arrayUtente.length< 5; i++) {
       numeriUtente = parseInt(prompt("inserisci i tuoi numeri"));
 
